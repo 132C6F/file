@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SI HYUN TOWN page</title>
+    <style>
+        
+        body {
+            background-color: #FFF8DC;
+            font-family: 'Nanum Gothic', Arial, sans-serif;
+            text-align: center; 
+            font-size: 18px; 
+        }
+
+        h1 {
+            font-size: 2em; 
+        }
+        p, ol, td, th {
+            font-size: 1.2em; 
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 3px solid #E6F3FF;
+            margin: 20px auto; 
+        }
+        th, td {
+            border: 3px solid #2c78bf;
+            padding: 10px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        th {
+            background-color: #A9D0F5;
+            border-right: 3px solid #2c78bf;
+            font-weight: bold;
+        }
+        th:last-child {
+            border-right: 3px solid #2c78bf;
+        }
+
+        .clickable {
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .clickable:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .exhibition-photo, .walking-photo {
+            width: 200px; 
+            height: auto; 
+            margin: 5px;
+        }
+        .centered-content {
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <audio controls autoplay muted>
+        <source src="My_Homepage/music_background.mp3" type="audio/mpeg">
+        <source src="My_Homepage/music_background.ogg" type="audio/mpeg">
+    </audio>
+    <audio id="backgroundAudio">
+        <source src="My_Homepage/music_background.mp3" type="audio/mpeg">
+    </audio>
+    
+    <script>
+        window.onload = function() {
+            var audio = document.getElementById("backgroundAudio");
+            audio.play();
+        }
+    </script>
+
+    <div class="centered-content">
+        <h1>💙 SI HYUN TOWN 💛</h1>
+        <img src="poto_face.png" alt="시현 이미지">
+        <p> "항상 <b>감사</b>하며 사는 삶을 실천하는 <b>'시현'</b>입니다."</p>
+    </div>
+
+    <p><b>&lt; 좋아하는 활동 &gt;</b></p>
+    <ol>
+        <p>1. 축구 : My Team Ulsan</p>
+        <img src="poto_ulsan.jpg"> <img src="poto_ulsan1.jpg"> <img src="poto_ulsan2.jpg">
+        <p>2. 전시관람</p>
+        <img src="poto_pic.jpg" class="exhibition-photo" alt="전시 이미지">
+        <img src="poto_pic1.jpg" class="exhibition-photo" alt="전시 이미지">
+        <img src="poto_pic2.jpg" class="exhibition-photo" alt="전시 이미지">
+        <p>3. 걷기</p>
+        <img src="poto_walk.jpg" class="walking-photo" alt="걷기 이미지">
+        <img src="poto_walk1.jpg" class="walking-photo" alt="걷기 이미지"><br>
+        <video width="320" height="180" controls>
+            <source src="poto_walk3.mp4" type="video/mp4">
+        </video>
+    </ol>
+
+    <p><b>&lt; 좋아하는 음악 &gt;</b></p>
+    <p>사진을 클릭해주세요!!</p>
+    <ol>
+        <p>1. 스텔라장</p>
+        <a href="https://www.youtube.com/watch?v=CnL56e3ElwI" target="_blank">
+            <img src="poto_music1.jpg" class="clickable" alt="스텔라장 이미지">
+        </a>
+
+        <p>2. 비투비</p>
+        <a href="https://www.youtube.com/watch?v=Iwdq3NtpeFQ" target="_blank">
+            <img src="poto_music2.jpeg" class="clickable" alt="비투비 이미지">
+        </a>
+
+        <p>3. 랜덤 클래식</p>
+        <a href="https://www.youtube.com/watch?v=klh7I70h3vg&t=211s" target="_blank">
+            <img src="poto_music3.jpeg" class="clickable" alt="랜덤 클래식 이미지">
+        </a>
+    </ol>
+
+    <p><b>&lt; 일주일의 엿보기 &gt;</b></p>
+    <table>
+        <tr>
+            <th>일</th>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+            <th>토</th>
+        </tr>
+        <tr>
+            <td>울산 vs 서울</td>
+            <td>Python</td>
+            <td>데이터</td>
+            <td>Web</td>
+            <td>HTML</td>
+            <td>멀티잇</td>
+            <td>친구만나기</td>
+        </tr>
+    </table>
+    <head>
+        <p><video width="800" height="400" controls>
+        <source src="poto_movie.mp4" type="video/mp4"></head>
+</body>
+</html>
